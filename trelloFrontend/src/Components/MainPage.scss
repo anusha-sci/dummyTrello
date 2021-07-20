@@ -1,0 +1,65 @@
+.mainPage__container{
+
+  margin: 2rem;
+  .company__container{
+    display: flex;
+    .add__company__container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-basis: 25%;
+      h4{
+        margin: 1rem 1rem 0;
+        font-size: 18px;
+        font-weight: 400;
+      }
+      input{
+        width: 150px;
+        height: 40px;
+        padding: 10px;
+        margin: 1rem;
+        border-radius: 5px;
+        &:focus{
+          outline: none;
+        }
+      }
+  
+      button{
+        margin: 0 1rem 1rem;
+        border-radius: 5px;
+        width: 150px;
+        cursor: pointer;
+        border: none;
+        height: 30px;
+        background: #313150 ;
+        color: white;
+        &:focus{
+          outline: none;
+        }
+      }
+    }
+    hr{
+      margin: 1rem; 
+      
+    }
+    .existing__company__container{
+      flex-basis: 65%;
+      ul{
+        display: flex;
+        flex-wrap: wrap;
+        
+        li{
+          list-style-type: none;
+          margin: 1rem;
+          padding: 10px 15px;
+          min-width: 100px;
+          background: cadetblue;
+          border-radius: 5px;
+          font-size: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
