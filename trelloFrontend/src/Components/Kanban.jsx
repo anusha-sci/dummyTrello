@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Kanban.scss";
 import DialogBox from "./DialogBox";
 
@@ -19,6 +19,10 @@ export default function Kanban({ data }) {
 
   const dragItem = useRef();
   const dragNode = useRef();
+
+  useEffect(() => {
+    setDataList(structureData(data));
+  }, [data]);
 
   const saveChanges = () => {
     const requestOptions = {

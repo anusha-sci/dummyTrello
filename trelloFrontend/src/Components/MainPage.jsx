@@ -8,11 +8,12 @@ export default function MainPage() {
   const [selectedCompanyDetails, setSelectedCompanyDetails] = useState();
 
   const getSelectedCompanyDetails = (e) => {
-    // console.log("company selescted", e.target.innerHTML);
     const selectedCompany = e.target.innerHTML;
     const selectedCompanyData = existingCompanies.filter(({ companyName }) => {
       return companyName === selectedCompany;
     });
+    console.log(existingCompanies);
+    console.log(selectedCompany, selectedCompanyData);
     setSelectedCompanyDetails(...selectedCompanyData);
   };
 
